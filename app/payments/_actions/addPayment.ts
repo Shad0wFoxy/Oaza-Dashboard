@@ -13,7 +13,7 @@ export default async function addPayment(formData: any) {
     const datetime = new Date(formData.get('date'));
     const date = datetime.toISOString();
     
-    const type = formData.get('type');
+    const type = formData.get('type');1
 
     try {
         await prisma.payments.create({

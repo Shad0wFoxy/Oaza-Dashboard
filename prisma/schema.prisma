@@ -26,3 +26,10 @@ model Stats {
   name  String
   value Float
 }
+
+model Participants {
+  id      Int    @id @default(autoincrement())
+  name    String
+  surname String
+  birthday DateTime
+}
