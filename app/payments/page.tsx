@@ -46,6 +46,7 @@ export default async function Payments() {
                     )
                 }
             </ul>
+            
             <Link 
                 href="/"
                 className="absolute bottom-28 right-48 w-24 h-12 border-4 border-black rounded flex justify-center items-center font-bold text-xl hover:bg-slate-400 transition duration-300"

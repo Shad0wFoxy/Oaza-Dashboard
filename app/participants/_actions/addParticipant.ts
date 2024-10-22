@@ -22,7 +22,7 @@ export default async function addParticipant(formData: any) {
         });
 
         revalidatePath("/participants");
-    } catch (err) {
+    } catch(err) {
         console.error(err);
     }
 }
