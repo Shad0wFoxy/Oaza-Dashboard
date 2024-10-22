@@ -1,4 +1,4 @@
-'use server';
+"use client";
 
 import { PrismaClient } from "@prisma/client";
 import { revalidatePath } from "next/cache";
@@ -15,7 +15,7 @@ export default async function deletePayment(formData: any) {
             }
         })
 
-        revalidatePath('/');
+        revalidatePath('/payments');
     } catch(err) {
         console.error(err);
     }

@@ -17,6 +17,12 @@ export default function Home() {
             >
                 Todo
             </Link>
+            <Link
+                href="./participants" 
+                className="m-auto font-semibold mt-6 border-4 border-zinc-800 px-8 py-4 flex rounded-xl hover:bg-slate-300 transition duration-300"
+            >
+                Participants
+            </Link>
         </main>
     )
 }

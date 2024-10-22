@@ -15,7 +15,7 @@ export default async function deletePayment(formData: any) {
             }
         })
 
-        revalidatePath('/');
+        revalidatePath('/todo');
     } catch(err) {
         console.error(err);
     }

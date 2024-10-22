@@ -18,7 +18,7 @@ export default  function PaymentRecord({ payment }: props) {
             <span>{payment.title}</span>
             <span>{payment.description}</span>
             <span>{payment.amount}</span>
-            <span>{parseDate(payment.date.toString())}</span>
+            <span>{parseDate(payment.date.toString(), true)}</span>
             <span>{payment.type}</span>
 
             {/* EDIT RECORD */}

@@ -15,7 +15,7 @@ export default async function addPayment(formData: any) {
             }
         });
 
-        revalidatePath('/');
+        revalidatePath('/todo');
     } catch(err) {
         console.error(err);
     }

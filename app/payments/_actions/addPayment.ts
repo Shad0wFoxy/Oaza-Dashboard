@@ -1,4 +1,4 @@
-'use server';
+"use client";
 
 import { PrismaClient } from "@prisma/client";
 import { revalidatePath } from "next/cache";
@@ -13,7 +13,7 @@ export default async function addPayment(formData: any) {
     const datetime = new Date(formData.get('date'));
     const date = datetime.toISOString();
     
-    const type = formData.get('type');1
+    const type = formData.get('type');
 
     try {
         await prisma.payments.create({
@@ -26,7 +26,7 @@ export default async function addPayment(formData: any) {
             }
         });
 
-        revalidatePath('/');
+        revalidatePath('/payments');
     } catch(err) {
         console.error(err);
     }

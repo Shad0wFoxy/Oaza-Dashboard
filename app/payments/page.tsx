@@ -7,7 +7,7 @@ import addUpMoney from "../_utils/addUpMoney";
 
 const prisma = new PrismaClient();
 
-export default async function Home() {
+export default async function Payments() {
     const payments = await prisma.payments.findMany();
     // const payments = [
     //     {
