@@ -1,11 +1,11 @@
 export default function parseDate(date: string) {
-    var newDate = new Date(Date.parse(date));
+    let newDate = new Date(Date.parse(date));
 
-    var day = newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
-    var month = newDate.getMonth() < 10 ? "0" + newDate.getMonth() : newDate.getMonth();
-    var year = newDate.getFullYear();
+    let day = newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
+    let month = newDate.getMonth() < 10 ? "0" + newDate.getMonth() : newDate.getMonth();
+    let year = newDate.getFullYear();
 
-    var weekday = newDate.getDay();
+    let weekday = newDate.getDay();
 
     const weekdays = ["poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela"];
 

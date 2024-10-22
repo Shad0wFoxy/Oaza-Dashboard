@@ -6,7 +6,7 @@ export default async function addUpMoney(addIncoming: boolean) {
     const payments = await prisma.payments.findMany();
     const stats = await prisma.stats.findMany();
 
-    var money = stats[0].value;
+    let money = stats[0].value;
 
     if (!addIncoming) {
         payments.forEach(payment => {
