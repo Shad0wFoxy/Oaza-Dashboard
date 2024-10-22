@@ -1,0 +1,1 @@
+INSERT INTO "public"."Stats" ("id", "name", "value") VALUES ('1', 'Budżet', '336.26');

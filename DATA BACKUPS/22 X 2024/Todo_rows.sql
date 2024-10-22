@@ -1,0 +1,1 @@
+INSERT INTO "public"."Todo" ("id", "title") VALUES ('1', 'Zapłacić zaległości'), ('4', 'Adoracja');
